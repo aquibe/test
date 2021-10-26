@@ -1,13 +1,13 @@
-let point1=350
-let point2=350
+let point1=250
+let point2=250
 
 let s1=document.getElementById('p1')
 let s2=document.getElementById('p2')
 
 function p1(){
     if(result()){
-        point1+=100
-        point2-=100
+        point1+=3
+        point2-=3
         s1.style.height=point1+'px'
         s2.style.height=point2+'px'
     }else{
@@ -18,8 +18,8 @@ function p1(){
 
 function p2(){
     if(result()){
-        point1--
-        point2++
+        point1-=3
+        point2+=3
         s1.style.height=point1+'px'
         s2.style.height=point2+'px'
     }else{
