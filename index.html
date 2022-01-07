@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="print://escpos.org/escpos/bt/print?srcTp=uri&srcObj=html&numCopies=1&src='https://aquibe.github.io/test/a.html'"><button>Print</button></a> 
+    <br><br>
+    <h1>Print WebPage</h1><br>
+    <input type="text" id="nn"><br><br>
+    <button type="button" onclick="loadPrint()">Load Website</button>
+    <a href="https://aquibe.github.io/test/a.html'"><button>Print</button></a> 
+
+    <br><br><br>
+    <h2>How to Use</h2>
+    <h4>Android only</h4>
+    <p>1. enter url</p>
+    <p>2. click 'load' button</p>
+    <p>3. click 'print' button</p>
+
+    <script>
+        let aa="print://escpos.org/escpos/bt/print?srcTp=uri&srcObj=html&numCopies=1&src=";
+        function loadPrint(){
+            let a=document.getElementById('nn').value
+            let url=aa+a
+            document.getElementById('pp').href=url
+        }
+    </script>
 </body>
 </html>
