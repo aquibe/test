@@ -11,7 +11,7 @@
     <h1>Print WebPage</h1><br>
     <input type="text" id="nn"><br><br>
     <button type="button" onclick="loadPrint()">Load Website</button>
-    <a href="print://escpos.org/escpos/bt/print?srcTp=uri&srcObj=html&numCopies=1&src='" id="pp"><button>Print</button></a> 
+    <a href="print://escpos.org/escpos/bt/print?srcTp=uri&srcObj=html&numCopies=1&src=" id="pp"><button>Print</button></a> 
 
     <br><br><br>
     <h2>How to Use</h2>
@@ -23,7 +23,7 @@
     <script>
         let aa="";
         function loadPrint(){
-            let a=document.getElementById('nn').value+"'"
+            let a=document.getElementById('nn').value+""
             document.getElementById('pp').href+=a
         }
     </script>
